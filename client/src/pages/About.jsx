@@ -1,7 +1,11 @@
 import { NavLink } from "react-router-dom";
 import { Analytics } from "../components/Analytics";
+import {useAuth} from "../store/auth";
 
 export const About = () => {
+
+  const {user} = useAuth();
+
   return (
     <>
       <section>
@@ -9,6 +13,7 @@ export const About = () => {
           <div className="section-hero">
             <div className="container grid grid-two-cols">
               <div className="hero-content">
+                <p>welcome,{user ? user.username : "user"}</p>
                 <h1>Why choose us?</h1>
                 <p>
                   dksjdjakmlhcdxkzc dxmklz cmkzcdjkszxjchdbxjzkxc nkc
