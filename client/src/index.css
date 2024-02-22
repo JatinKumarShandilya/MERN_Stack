@@ -65,7 +65,9 @@ li{
 .grid-two-cols{
   grid-template-columns: repeat(2,1fr);
 }
-
+.grid-three-cols{
+  grid-template-columns: repeat(3,1fr);
+}
 .grid-four-cols{
   grid-template-columns: repeat(4,1fr);
 }
@@ -312,4 +314,34 @@ a.active{
 .content .btns a:hover {
   background: var(--btn-color);
   color: #fff;
+}
+
+/* service page- card */
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  border: .2rem solid var(--helper-color);
+}
+.card-img{
+  text-align: center;
+  & img{
+    width: 70%;
+    height: auto;
+    filter: drop-shadow(0 0 2rem 2rem #fff);
+    -webkit-filter: drop-shadow(0 0 2rem 2rem #fff);
+}
+}
+
+.card-details{
+  padding: 2.4rem;
+
+}
+.grid p{
+  font-size: 1.4rem;
+}
+
+.card-details h2{
+  font-size: 3.2rem;
+  margin: 1.2rem 0 2.4rem 0;
 }
